@@ -253,10 +253,9 @@ main {
 /*** ESTILOS PARA EL BLOG ***/
 #main-section {
   width: 100%;
-  height: 150vh;
+  height: auto;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
-  background-image: url("ruta_de_la_imagen.jpg");
   background-size: cover;
   background-attachment: fixed;
   overflow-y: scroll;
@@ -266,9 +265,37 @@ main {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #000000;
+  background-color: transparent;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.scroll-section {
+  width: 98%;
+  height: auto;
+  overflow-y: scroll;
+  scrollbar-width: 5px;
+  scrollbar-color: violet;
+}
+
+.container__articles {
+  width: 100%;
+}
+
+.div__articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*** ESTILOS PARA ARTICULOS ***/
@@ -4029,6 +4056,15 @@ body {
   color: #ff00d0;
 }
 
+.nav__style .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nav__style .nav-link:hover {
+  color: #ff00d0 !important;
+}
+
 /* Página contacto */
 .button-group {
   display: -webkit-box;
@@ -4070,4 +4106,43 @@ body {
   font-family: roboto;
   font-size: 1rem;
   color: #ffffff;
+}
+
+.text__white {
+  color: #ffffff;
+}
+
+/* Carrusel inicial blog */
+.square-carousel {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.square-carousel .carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.square-carousel .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.square-carousel .carousel-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
 }

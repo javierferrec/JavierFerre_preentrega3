@@ -2,10 +2,9 @@
 
 #main-section {
   width: 100%;
-  height: 150vh;
+  height: auto;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
-  background-image: url("ruta_de_la_imagen.jpg");
   background-size: cover;
   background-attachment: fixed;
   overflow-y: scroll;
@@ -15,17 +14,113 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #000000;
+  background-color: transparent;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
+
+
+
+
+.scroll-section {
+  width: 98%;
+  height: auto;
+  overflow-y: scroll;
+  scrollbar-width: 5px;
+  scrollbar-color: violet;
+}
+
+.container__articles {
+  width: 100%;
+}
+
+.div__articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /*** ESTILOS PARA ARTICULOS ***/
 
 .article {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: $color-fondo;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,7 +131,7 @@
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  color: #df3ddc;
+  color: $color-titulo;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
@@ -45,7 +140,7 @@
   text-align: center;
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: $color-subtitulo;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
@@ -59,9 +154,9 @@
 
 .article__text {
   width: 100%;
-  color: #ffffff;
+  color: $color-texto;
   font-family: "Roboto", sans-serif;
-  text-align:justify;
+  text-align: justify;
   margin: 1.5rem 1.5rem 0.5rem;
   line-height: 1.8rem;
 }
@@ -89,7 +184,7 @@
   text-align: right;
   font-style: italic;
   margin-top: 1rem;
-  color: #ffffff;
+  color: $color-autor;
   font-family: "Roboto", sans-serif;
 }
 

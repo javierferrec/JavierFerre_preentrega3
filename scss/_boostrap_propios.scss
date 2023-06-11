@@ -25,6 +25,30 @@
 }
 
 
+
+
+
+.nav__style .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nav__style .nav-link:hover {
+  color: #ff00d0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Página contacto */
 
 .button-group {
@@ -55,4 +79,9 @@
   font-family: roboto;
   font-size: 1rem;
   color: #ffffff;
+}
+
+.text__white {
+  color: #ffffff;
+
 }
